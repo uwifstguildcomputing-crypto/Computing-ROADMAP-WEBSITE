@@ -11,7 +11,8 @@ import { ThemeToggle } from "@/components/theme-toggle"
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
-  { name: "RoadMap", href: "/roadmap" },
+  { name: "RoadMap", href: "/tree" },
+  { name: "Degree Planner", href: "/roadmap" },
   { name: "Dept. Book", href: "/dept-book" },
 ]
 
