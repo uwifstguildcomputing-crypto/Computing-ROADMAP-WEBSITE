@@ -12,6 +12,7 @@ export const courses: Course[] = [
     credits: 3,
     year: "y1",
     offered: ["s1", "s2"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP1127",
@@ -20,6 +21,7 @@ export const courses: Course[] = [
     credits: 3,
     year: "y1",
     offered: ["s1", "s2"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP1161",
@@ -29,6 +31,7 @@ export const courses: Course[] = [
     year: "y1",
     offered: ["s1", "s2"],
     prereqs: ["COMP1126", "COMP1127"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP1210",
@@ -37,6 +40,7 @@ export const courses: Course[] = [
     credits: 3,
     year: "y1",
     offered: ["s1", "s2"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP1220",
@@ -45,6 +49,7 @@ export const courses: Course[] = [
     credits: 3,
     year: "y1",
     offered: ["s1", "s2"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "SWEN1007",
@@ -53,6 +58,7 @@ export const courses: Course[] = [
     credits: 3,
     year: "y1",
     offered: ["s2"],
+    degrees: ["bscs", "bsca", "bita"],
   },
 
   // =======================
@@ -66,6 +72,7 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s1"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP2140",
@@ -75,6 +82,7 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s1"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP2171",
@@ -84,6 +92,7 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s2"],
     prereqs: ["COMP2140"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP2190",
@@ -93,6 +102,7 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s1"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161", "COMP1210"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP2201",
@@ -102,6 +112,7 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s1"],
     prereqs: ["COMP1210"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP2211",
@@ -111,6 +122,7 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s2"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161", "COMP1210"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP2340",
@@ -120,6 +132,7 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s2"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161", "COMP1210"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP2802",
@@ -129,6 +142,7 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s2"], // *Not offered in 2025/26*
     prereqs: ["COMP1210"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "INFO2101",
@@ -138,6 +152,7 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s2"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "INFO2111",
@@ -147,6 +162,7 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s1"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "INFO2180",
@@ -156,6 +172,7 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s2"],
     prereqs: ["COMP2140"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "SWEN2165",
@@ -165,6 +182,7 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s2"],
     prereqs: ["COMP2171"],
+    degrees: ["bscs", "bsca", "bita"],
   },
 
   // =======================
@@ -178,6 +196,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1"],
     prereqs: ["COMP2340"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP3161",
@@ -187,6 +206,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP1210", "COMP1126", "COMP1127", "COMP1161"], 
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP3162",
@@ -196,6 +216,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2190"], 
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP3191",
@@ -205,6 +226,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1"],
     prereqs: ["COMP2190"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP3192",
@@ -214,6 +236,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP3191"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP3220",
@@ -223,6 +246,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1"],
     prereqs: ["COMP2211", "COMP2201"], 
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP3410",
@@ -232,6 +256,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2211", "COMP2340"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP3652",
@@ -241,6 +266,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2211"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP3702",
@@ -250,6 +276,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2201"], 
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP3801",
@@ -259,6 +286,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2340", "COMP2140"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP3802",
@@ -268,6 +296,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2802"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP3901",
@@ -277,6 +306,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2140", "COMP2211"],
+    degrees: ["bscs", "bsca", "bita"],
   },
 
   // Internships / IS / Security / UI / Web / Ecommerce
@@ -288,6 +318,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1", "s2", "s3"],
     // Permission-based → no course-code prereq
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "COMP3912",
@@ -297,6 +328,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1", "s2", "s3"],
     // Permission-based
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "INFO3106",
@@ -306,6 +338,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1"],
     prereqs: ["COMP2340", "COMP2190"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "INFO3110",
@@ -315,6 +348,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2140", "COMP2190"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "INFO3155",
@@ -324,6 +358,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1"],
     prereqs: ["COMP2190", "COMP2201"], 
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "INFO3165",
@@ -333,6 +368,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2190", "COMP2201"], 
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "INFO3171",
@@ -342,6 +378,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1"],
     prereqs: ["COMP2140", "INFO2180"], 
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "INFO3180",
@@ -351,6 +388,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["INFO2180"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "INFO3435",
@@ -360,6 +398,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2140", "INFO2180"],
+    degrees: ["bscs", "bsca", "bita"],
   },
 
   {
@@ -370,6 +409,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2171"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "SWEN3001",
@@ -379,6 +419,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1"],
     prereqs: ["SWEN3000"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "SWEN3002",
@@ -388,6 +429,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["SWEN3001"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "SWEN3003",
@@ -397,6 +439,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1"],
     prereqs: ["SWEN1005", "COMP2171", "COMP3161"], // *Not offered in 2025/26*; SWEN1005 appears in some catalogs
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "SWEN3004",
@@ -406,6 +449,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["SWEN3003"], // *Not offered in 2025/26*
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "SWEN3120",
@@ -415,6 +459,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1"],
     prereqs: ["COMP2140", "COMP2171"], // *Not offered in 2025/26*
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "SWEN3130",
@@ -424,6 +469,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1"],
     prereqs: ["COMP2140"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "SWEN3145",
@@ -433,6 +479,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1"],
     prereqs: ["COMP2140", "COMP2171"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "SWEN3165",
@@ -442,6 +489,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2140", "COMP2171"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "SWEN3185",
@@ -451,6 +499,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s2"],
     prereqs: ["COMP2201"],
+    degrees: ["bscs", "bsca", "bita"],
   },
   {
     id: "SWEN3920",
@@ -460,6 +509,7 @@ export const courses: Course[] = [
     year: "y3",
     offered: ["s1", "s2", "s3"],
     prereqs: ["COMP2140", "SWEN3130", "SWEN3145"], 
+    degrees: ["bscs", "bsca", "bita"],
   },
 ];
 

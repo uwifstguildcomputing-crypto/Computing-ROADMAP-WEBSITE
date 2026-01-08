@@ -2,7 +2,7 @@ import type { BookPage } from "@/lib/types"
 
 export const bookPages: BookPage[] = [
   {
-    title: "Welcome to Computer Science",
+    title: "Welcome to the Department of Computing",
     body: "Our department is dedicated to providing world-class education in computer science and preparing students for successful careers in technology. With state-of-the-art facilities and renowned faculty, we offer a comprehensive curriculum that covers both theoretical foundations and practical applications.",
     image: "https://picsum.photos/seed/book1/600/400",
   },

@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { FeatureCard } from "@/components/feature-card"
-import { Map, BookOpen } from "lucide-react"
+import { Map, BookOpen, NotebookPen } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -14,7 +14,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-[color:var(--text)] sm:text-5xl lg:text-6xl text-balance">
-                Welcome to Computer Science
+                Welcome to the Computing Department 
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-lg text-[color:var(--muted)] leading-relaxed text-pretty">
                 Explore your academic journey and discover the resources available to help you succeed in your computer
@@ -43,16 +43,22 @@ export default function HomePage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid gap-8 md:grid-cols-2">
               <FeatureCard
-                title="Road Map"
+                title="Degree Planner"
                 description="Plan your academic journey with our interactive course roadmap. Drag and drop courses to create your personalized degree plan and track your progress towards graduation."
                 href="/roadmap"
-                icon={Map}
+                icon={NotebookPen}
               />
               <FeatureCard
                 title="Department Book"
                 description="Browse through our comprehensive department handbook. Learn about our programs, faculty, research opportunities, and everything you need to know about the CS department."
                 href="/dept-book"
                 icon={BookOpen}
+              />
+              <FeatureCard
+                title="Road Map"
+                description="Browse through our comprehensive department handbook. Learn about our programs, faculty, research opportunities, and everything you need to know about the CS department."
+                href="/tree"
+                icon={Map}
               />
             </div>
           </div>

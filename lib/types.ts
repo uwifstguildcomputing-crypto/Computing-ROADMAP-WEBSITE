@@ -9,9 +9,10 @@ export type Course = {
   code: string;          // same as id
   name: string;
   credits: number;
-  year: YearKey;         // level/year this course belongs to
+  year: YearKey;          // level/year this course belongs to
   offered: SemesterKey[]; // semesters offered (e.g. ["s1","s2"])
   prereqs?: string[];     // prerequisite course codes (e.g. ["COMP1126","COMP1127"])
+  degrees: string[];      // degrees that include this course (e.g. ["bscs","bsca"])
 };
 
 export type Roadmap = Record<YearKey, Record<SemesterKey, string[]>>;

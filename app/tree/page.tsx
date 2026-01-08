@@ -6,84 +6,58 @@ import { Footer } from "@/components/footer"
 import { CourseMarker } from "@/components/course-tree"
 import { BookOpen, Map, GraduationCap } from "lucide-react"
 import { useState } from 'react';
+import { courses } from "@/data/courses";
 
 
 const degreeOptions = [
-  { key: 'all', label: 'All Courses' },
   { key: 'bscs', label: 'B.Sc. Computer Science' },
   { key: 'bsca', label: 'B.Sc. Software Engineering' },
   { key: 'bita', label: 'B.Sc. Information Technology' },
 ];
 
-const yearOptions = [
-    { key: 0, label: 'All Years' }, 
+const yearOptions = [ 
     { key: 1, label: 'Year 1' },
     { key: 2, label: 'Year 2' },
     { key: 3, label: 'Year 3' },
 ];
 
 // --- Define Course Data ---
+type VisualInfo = {
+  position: string;
+  icon: any;
+};
 // The 'position' is a percentage from the left (0% to 100%)
-const roadmapCourses = [
-  { 
-    id: 'cs1161', 
-    title: 'COMP1161: Intro to Programming', 
-    description: 'The very first step: learn Python basics and computational thinking.',
-    position: '10%',
-    icon: BookOpen,
-    category: 'Foundation',
-    degree: ['bscs', 'bsca', 'bita'],
-    year: 2 
-  },
-  { 
-    id: 'cs2101', 
-    title: 'COMP 2101: Discrete Math', 
-    description: 'Essential mathematical structures for computer science.',
-    position: '28%',
-    icon: Map,
-    category: 'Foundation',
-    degree: ['bscs', 'bsca'] 
-  },
-  { 
-    id: 'cs3162', 
-    title: 'COMP 3162: Data Structures', 
-    description: 'Covers lists, stacks, queues, and basic algorithm analysis.',
-    position: '45%',
-    icon: BookOpen,
-    category: 'Core',
-    degree: ['bscs', 'bsca'],
-    year: 1
-  },
-  { 
-    id: 'cs2201', 
-    title: 'COMP 2201: Analysis of Algorithms', 
-    description: 'Study advanced algorithms and complexity theory.',
-    position: '62%',
-    icon: Map,
-    category: 'Core',
-    degree: ['bscs', 'bsca'], 
-    year: 3
-  },
-  { 
-    id: 'cs3136', 
-    title: 'COMP 3136: Operating Systems', 
-    description: 'Understand kernel design, memory management, and concurrent processes.',
-    position: '85%',
-    icon: GraduationCap,
-    category: 'Advanced',
-    degree: ['bscs', 'bsca'] 
-  },
-];
+const visualMetadata: Record<string, VisualInfo> = {
+    "COMP1126": { position: "10%", icon: BookOpen },
+    "COMP1210": { position: "25%", icon: Map },
+    "COMP2140": { position: "45%", icon: BookOpen },
+    "COMP2211": { position: "65%", icon: Map },
+    "COMP3101": { position: "85%", icon: GraduationCap },
+    };
 
 export default function RoadmapPage() {
     const [selectedDegree, setSelectedDegree] = useState('bscs'); 
     const [selectedYear, setSelectedYear] = useState(0); 
 
-    const filteredCourses = roadmapCourses.filter(course => {
-        const degreeMatch = selectedDegree === 'all' || course.degree.includes(selectedDegree);
-        const yearMatch = selectedYear === 0 || course.year === selectedYear;
+    const filteredCourses = courses
+    .filter(course => {
+        const hasPosition = visualMetadata[course.id];
+        if (!hasPosition) return false;
+
+        const degreeMatch = selectedDegree === 'all' || 
+                        (course.degrees?.includes(selectedDegree) ?? false);
+
+        
+        const yearMatch = course.year === `y${selectedYear}`;
+        
         return degreeMatch && yearMatch;
-    });
+    })
+    .map(course => ({
+      ...course,
+      ...visualMetadata[course.id],
+      title: `${course.code}: ${course.name}`,
+      description: `Credits: ${course.credits}. Offered: ${course.offered.join(', ')}`
+    }));
 
     // Find the current degree label for the title
     const currentDegreeLabel = degreeOptions.find(d => d.key === selectedDegree)?.label || 'Roadmap';
