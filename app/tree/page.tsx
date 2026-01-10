@@ -4,7 +4,7 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { CourseMarker } from "@/components/course-tree"
-import { BookOpen, Map, GraduationCap } from "lucide-react"
+import { BookOpen, Map, GraduationCap, BriefcaseBusiness, Gem } from "lucide-react"
 import { useState } from 'react';
 import { courses } from "@/data/courses";
 
@@ -46,7 +46,6 @@ const visualMetadata: Record<string, VisualInfo> = {
     "SWEN3185": { position: "75%", icon: BookOpen },
     "SWEN3920": { position: "80%", icon: Map },
     };
-
 export default function RoadmapPage() {
     const [selectedDegree, setSelectedDegree] = useState('bscs'); 
     const [selectedYear, setSelectedYear] = useState(0); 
@@ -75,10 +74,8 @@ export default function RoadmapPage() {
     const currentDegreeLabel = degreeOptions.find(d => d.key === selectedDegree)?.label || 'Roadmap';
 
     return (
-        <div className="flex min-h-screen flex-col">
-            <Navbar />
-
-            <main className="flex-1 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="flex min-h-screen flex-col">
+        <main className="flex-1 py-12 px-4 sm:px-6 lg:px-8">
                 
                 {/* Degree Selection Sub-Menu */}
                 <div className="flex justify-center space-x-4 mb-4 border-b border-[color:var(--border-color)] pb-4">
