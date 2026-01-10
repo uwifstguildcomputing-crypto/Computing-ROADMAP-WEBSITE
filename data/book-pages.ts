@@ -2,14 +2,14 @@ import type { BookPage } from "@/lib/types"
 
 export const bookPages: BookPage[] = [
   {
-    title: "Welcome to the Department of Computing",
+    title: "Welcome to the Department of Computing Freshers Guide",
     body: "Our department is dedicated to providing world-class education in computer science and preparing students for successful careers in technology. With state-of-the-art facilities and renowned faculty, we offer a comprehensive curriculum that covers both theoretical foundations and practical applications.",
-    image: "https://picsum.photos/seed/book1/600/400",
+    image: "/Freshers1.png",
   },
   {
     title: "Our Mission",
     body: "We strive to foster innovation, critical thinking, and ethical responsibility in computing. Our mission is to educate the next generation of technology leaders who will shape the future of computing and make positive contributions to society.",
-    image: "https://picsum.photos/seed/book2/600/400",
+    image: "/Freshers1.png",
   },
   {
     title: "Research Excellence",

@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { FeatureCard } from "@/components/feature-card"
 import { Map, BookOpen, NotebookPen } from "lucide-react"
+import { HomeHeroSlider } from "@/components/home-hero-slider"
 
 export default function HomePage() {
   return (
@@ -24,15 +25,8 @@ export default function HomePage() {
 
             {/* Decorative placeholder for illustration */}
             <div className="mx-auto mt-12 max-w-4xl">
-              <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-[color:var(--border-color)] bg-[color:var(--card)]">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="mx-auto h-24 w-24 rounded-full bg-[color:var(--primary-color)]/10 flex items-center justify-center mb-4">
-                      <BookOpen className="h-12 w-12 text-[color:var(--primary-color)]" />
-                    </div>
-                    <p className="text-[color:var(--muted)]">Hero Illustration Area</p>
-                  </div>
-                </div>
+              <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-[color:var(--border-color)] bg-[color:var(--card)] shadow-2xl">
+                <HomeHeroSlider />
               </div>
             </div>
           </div>

@@ -152,7 +152,7 @@ const handleDragEnd = (event: DragEndEvent) => {
     if (confirm("Are you sure you want to reset your roadmap to the default template?")) {
       reset()
       toast({
-        title: "Planner reset",
+        title: "Roadmap reset",
         description: "Your roadmap has been reset to the default template",
       })
     }
@@ -167,7 +167,7 @@ const handleDragEnd = (event: DragEndEvent) => {
           {/* Header */}
           <div className="mb-6 flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-[color:var(--text)]">Course Planner</h1>
+              <h1 className="text-3xl font-bold text-[color:var(--text)]">Course RoadMap</h1>
               <p className="mt-1 text-sm text-[color:var(--muted)]">
                 Drag and drop courses to plan your academic journey
               </p>

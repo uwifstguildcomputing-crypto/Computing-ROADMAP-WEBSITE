@@ -75,8 +75,8 @@ export default function RoadmapPage() {
 
     return (
       <div className="flex min-h-screen flex-col">
-        <main className="flex-1 py-12 px-4 sm:px-6 lg:px-8">
-                
+        <Navbar />
+        <main className="flex-1 py-12 px-4 sm:px-6 lg:px-8">    
                 {/* Degree Selection Sub-Menu */}
                 <div className="flex justify-center space-x-4 mb-4 border-b border-[color:var(--border-color)] pb-4">
                     {degreeOptions.map(option => (
