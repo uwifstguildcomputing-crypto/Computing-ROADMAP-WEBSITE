@@ -13,6 +13,7 @@ const degreeOptions = [
   { key: 'bscs', label: 'B.Sc. Computer Science' },
   { key: 'bsca', label: 'B.Sc. Software Engineering' },
   { key: 'bita', label: 'B.Sc. Information Technology' },
+  { key: 'bscsa', label:'B.Sc. Cyber Security'},
 ];
 
 const yearOptions = [ 
@@ -29,10 +30,21 @@ type VisualInfo = {
 // The 'position' is a percentage from the left (0% to 100%)
 const visualMetadata: Record<string, VisualInfo> = {
     "COMP1126": { position: "10%", icon: BookOpen },
+    "COMP1127": { position: "15%", icon: BookOpen },
+    "COMP1161": { position: "20%", icon: GraduationCap },
     "COMP1210": { position: "25%", icon: Map },
+    "COMP1220": { position: "30%", icon: Map },
+    "COMP2130": { position: "40%", icon: GraduationCap },
     "COMP2140": { position: "45%", icon: BookOpen },
+    "COMP2190": { position: "50%", icon: Map },
+    "COMP2201": { position: "55%", icon: GraduationCap },
     "COMP2211": { position: "65%", icon: Map },
     "COMP3101": { position: "85%", icon: GraduationCap },
+    "SWEN3130": { position: "90%", icon: BookOpen },
+    "SWEN3145": { position: "95%", icon: Map },
+    "SWEN3165": { position: "70%", icon: GraduationCap },
+    "SWEN3185": { position: "75%", icon: BookOpen },
+    "SWEN3920": { position: "80%", icon: Map },
     };
 
 export default function RoadmapPage() {
