@@ -4,7 +4,7 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { CourseMarker } from "@/components/course-tree"
-import { BookOpen, Map, GraduationCap, BriefcaseBusiness, Gem } from "lucide-react"
+import { BookOpen, Map, GraduationCap, BriefcaseBusiness, Gem, Presentation } from "lucide-react"
 import { useState } from 'react';
 import { courses } from "@/data/courses";
 
@@ -36,10 +36,20 @@ const visualMetadata: Record<string, VisualInfo> = {
     "COMP1220": { position: "30%", icon: Map },
     "COMP2130": { position: "40%", icon: GraduationCap },
     "COMP2140": { position: "45%", icon: BookOpen },
+    "COMP2171": {position:  "36%", icon:Map},
     "COMP2190": { position: "50%", icon: Map },
     "COMP2201": { position: "55%", icon: GraduationCap },
     "COMP2211": { position: "65%", icon: Map },
+    "INFO2180": { position:  "48%", icon: Map},
+    "COMP2340": { position:  "52%", icon:Map},
     "COMP3101": { position: "85%", icon: GraduationCap },
+    "INFO3106": {position: "68%", icon: GraduationCap},
+    "COMP3161": {position: "71%", icon: GraduationCap},
+    "INFO3155": {position: "74%", icon: GraduationCap},
+    "INFO3165": {position: "78%", icon: GraduationCap},
+    "COMP3220": { position: "82%", icon: GraduationCap },
+    "COMP3911": { position: "90%", icon: BriefcaseBusiness },
+    "COMP3901": { position: "98%", icon: Presentation },
     "SWEN3130": { position: "90%", icon: BookOpen },
     "SWEN3145": { position: "95%", icon: Map },
     "SWEN3165": { position: "70%", icon: GraduationCap },
