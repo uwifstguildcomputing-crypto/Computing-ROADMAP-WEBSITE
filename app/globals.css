@@ -15,9 +15,17 @@
   --muted-foreground: #475569;
   --text: #0a0f2c;
   --border-color: #d0d7ff;
+  background: var(--background);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--foreground);
 
 
-  --background: var(--bg);
+  --background:linear-gradient( rgb(255, 255, 255) 25%, rgba(0,0,0,0) 100%),
+      url('/blue.jpg');
+    background-attachment: fixed;
+    background-size: cover;
   --foreground: var(--text);
   --card-bg: var(--card);
   --card-foreground: var(--text);
@@ -48,6 +56,13 @@
   --sidebar-accent-foreground: #312e81;
   --sidebar-border: var(--border-color);
   --sidebar-ring: var(--primary-color);
+
+  h1 {
+  background: linear-gradient(135deg, #0a0f2c 0%, #1e90ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0px 4px 10px rgba(30, 144, 255, 0.2));
+}
 }
 
 .dark {
