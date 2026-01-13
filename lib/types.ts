@@ -13,6 +13,7 @@ export type Course = {
   offered: SemesterKey[]; // semesters offered (e.g. ["s1","s2"])
   prereqs?: string[];     // prerequisite course codes (e.g. ["COMP1126","COMP1127"])
   degrees: string[];      // degrees that include this course (e.g. ["bscs","bsca"])
+  description?: string;
 };
 
 export type Roadmap = Record<YearKey, Record<SemesterKey, string[]>>;

@@ -13,6 +13,7 @@ export const courses: Course[] = [
     year: "y1",
     offered: ["s1", "s2"],
     degrees: ["bscs", "bsca", "bita", "bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP1127",
@@ -22,6 +23,7 @@ export const courses: Course[] = [
     year: "y1",
     offered: ["s1", "s2"],
     degrees: ["bscs", "bsca", "bita", "bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP1161",
@@ -32,6 +34,7 @@ export const courses: Course[] = [
     offered: ["s1", "s2"],
     prereqs: ["COMP1126", "COMP1127"],
     degrees: ["bscs", "bsca", "bita", "bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP1210",
@@ -41,6 +44,7 @@ export const courses: Course[] = [
     year: "y1",
     offered: ["s1", "s2"],
     degrees: ["bscs", "bsca", "bita", "bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP1220",
@@ -50,6 +54,7 @@ export const courses: Course[] = [
     year: "y1",
     offered: ["s1", "s2"],
     degrees: ["bscs", "bsca", "bita", "bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "SWEN1007",
@@ -59,6 +64,7 @@ export const courses: Course[] = [
     year: "y1",
     offered: ["s2"],
     degrees: ["bscs", "bsca", "bita", "bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
 
   // =======================
@@ -73,6 +79,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161"],
     degrees: ["bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP2140",
@@ -83,6 +90,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161"],
     degrees: ["bscs", "bsca", "bita", "bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP2171",
@@ -93,6 +101,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2140"],
     degrees: ["bscs", "bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP2190",
@@ -103,6 +112,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161", "COMP1210"],
     degrees: ["bscs", "bsca", "bita", "bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP2201",
@@ -113,6 +123,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP1210"],
     degrees: ["bscs", "bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP2211",
@@ -122,7 +133,8 @@ export const courses: Course[] = [
     year: "y2",
     offered: ["s2"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161", "COMP1210"],
-    degrees: ["bscs", "bsca"],
+    degrees: ["bscs", "bsca", "bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP2340",
@@ -133,6 +145,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161", "COMP1210"],
     degrees: ["bscs", "bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP2802",
@@ -143,6 +156,7 @@ export const courses: Course[] = [
     offered: ["s2"], // *Not offered in 2025/26*
     prereqs: ["COMP1210"],
     degrees: ["bscs", "bsca",],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "INFO2101",
@@ -153,6 +167,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161"],
     degrees: ["bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "INFO2111",
@@ -163,6 +178,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161"],
     degrees: ["bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "INFO2180",
@@ -173,6 +189,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2140"],
     degrees: ["bita", "bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "SWEN2165",
@@ -183,6 +200,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2171"],
     degrees: ["bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
 
   // =======================
@@ -197,6 +215,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP2340"],
     degrees: ["bscs"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP3161",
@@ -207,6 +226,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP1210", "COMP1126", "COMP1127", "COMP1161"], 
     degrees: ["bscs", "bita", "bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP3162",
@@ -217,6 +237,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2190"], 
     degrees: ["bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP3191",
@@ -227,6 +248,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP2190"],
     degrees: ["bscs", "bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP3192",
@@ -237,6 +259,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP3191"],
     degrees: ["bscs", "bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP3220",
@@ -247,6 +270,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP2211", "COMP2201"], 
     degrees: ["bscs", "bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP3410",
@@ -257,6 +281,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2211", "COMP2340"],
     degrees: ["bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP3652",
@@ -267,6 +292,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2211"],
     degrees: ["bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP3702",
@@ -277,6 +303,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2201"], 
     degrees: ["bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP3801",
@@ -287,6 +314,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2340", "COMP2140"],
     degrees: ["bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP3802",
@@ -297,6 +325,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2802"],
     degrees: ["bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP3901",
@@ -307,6 +336,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2140", "COMP2211"],
     degrees: ["bscs","bita","bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
 
   // Internships / IS / Security / UI / Web / Ecommerce
@@ -319,6 +349,7 @@ export const courses: Course[] = [
     offered: ["s1", "s2", "s3"],
     // Permission-based → no course-code prereq
     degrees: [ "bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "COMP3912",
@@ -329,6 +360,7 @@ export const courses: Course[] = [
     offered: ["s1", "s2", "s3"],
     // Permission-based
     degrees: ["bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "INFO3106",
@@ -339,6 +371,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP2340", "COMP2190"],
     degrees: [ "bita","bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "INFO3110",
@@ -349,6 +382,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2140", "COMP2190"],
     degrees: [ "bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "INFO3155",
@@ -359,6 +393,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP2190", "COMP2201"], 
     degrees: ["bita","bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "INFO3165",
@@ -369,6 +404,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2190", "COMP2201"], 
     degrees: ["bita","bscsa"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "INFO3171",
@@ -379,6 +415,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP2140", "INFO2180"], 
     degrees: ["bscs", "bsca", "bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "INFO3180",
@@ -389,6 +426,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["INFO2180"],
     degrees: ["bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "INFO3435",
@@ -399,6 +437,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2140", "INFO2180"],
     degrees: ["bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
 
   {
@@ -410,6 +449,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2171"],
     degrees: ["bscs", "bsca", "bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "SWEN3001",
@@ -420,6 +460,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["SWEN3000"],
     degrees: ["bscs", "bsca", "bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "SWEN3002",
@@ -430,6 +471,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["SWEN3001"],
     degrees: ["bscs", "bsca", "bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "SWEN3003",
@@ -440,6 +482,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["SWEN1005", "COMP2171", "COMP3161"], // *Not offered in 2025/26*; SWEN1005 appears in some catalogs
     degrees: ["bscs", "bsca", "bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "SWEN3004",
@@ -450,6 +493,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["SWEN3003"], // *Not offered in 2025/26*
     degrees: ["bscs", "bsca", "bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "SWEN3120",
@@ -460,6 +504,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP2140", "COMP2171"], // *Not offered in 2025/26*
     degrees: ["bscs", "bsca", "bita"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "SWEN3130",
@@ -470,6 +515,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP2140"],
     degrees: [ "bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "SWEN3145",
@@ -480,6 +526,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP2140", "COMP2171"],
     degrees: ["bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "SWEN3165",
@@ -490,6 +537,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2140", "COMP2171"],
     degrees: ["bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "SWEN3185",
@@ -500,6 +548,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2201"],
     degrees: ["bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
   {
     id: "SWEN3920",
@@ -510,6 +559,7 @@ export const courses: Course[] = [
     offered: ["s1", "s2", "s3"],
     prereqs: ["COMP2140", "SWEN3130", "SWEN3145"], 
     degrees: ["bsca"],
+    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
   },
 ];
 

@@ -40,13 +40,18 @@ const visualMetadata: Record<string, VisualInfo> = {
     "COMP2190": { position: "50%", icon: Map },
     "COMP2201": { position: "55%", icon: GraduationCap },
     "COMP2211": { position: "65%", icon: Map },
+    "INFO2101": { position: "60%", icon: BookOpen },
+    "INFO2111": { position: "64%", icon: GraduationCap },
     "INFO2180": { position:  "48%", icon: Map},
     "COMP2340": { position:  "52%", icon:Map},
     "COMP3101": { position: "85%", icon: GraduationCap },
     "INFO3106": {position: "68%", icon: GraduationCap},
+    "INFO3110": {position: "72%", icon: Gem},
     "COMP3161": {position: "71%", icon: GraduationCap},
     "INFO3155": {position: "74%", icon: GraduationCap},
     "INFO3165": {position: "78%", icon: GraduationCap},
+    "INFO3171": {position: "76%", icon: GraduationCap},
+    "INFO3180": {position: "80%", icon: GraduationCap},
     "COMP3220": { position: "82%", icon: GraduationCap },
     "COMP3911": { position: "90%", icon: BriefcaseBusiness },
     "COMP3901": { position: "98%", icon: Presentation },
@@ -77,7 +82,7 @@ export default function RoadmapPage() {
       ...course,
       ...visualMetadata[course.id],
       title: `${course.code}: ${course.name}`,
-      description: `Credits: ${course.credits}. Offered: ${course.offered.join(', ')}`
+      description: `${course.description}. Credits: ${course.credits}. Offered: ${course.offered.join(', ')}`
     }));
 
     // Find the current degree label for the title
