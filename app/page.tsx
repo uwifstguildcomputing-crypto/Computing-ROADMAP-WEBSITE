@@ -1,30 +1,76 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { FeatureCard } from "@/components/feature-card"
-import { Map, BookOpen, NotebookPen } from "lucide-react"
+import { Map, BookOpen, NotebookPen, Sparkles, ArrowRight, Users, GraduationCap, Award } from "lucide-react"
 import { HomeHeroSlider } from "@/components/home-hero-slider"
-
+import Link from "next/link"
 export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
 
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative border-b border-[color:var(--border-color)] bg-gradient-to-b from-[color:var(--bg)] to-[color:var(--card)]">
-          <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        {/* Modern Hero Section */}
+        <section className="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32">
+          {/* Animated Background Blobs from example */}
+          <div className="absolute inset-0 z-0">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+            <div className="absolute top-40 right-10 w-72 h-72 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+          </div>
+
+          <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-[color:var(--text)] sm:text-5xl lg:text-6xl text-balance">
-                Welcome to the Computing Department 
+              {/* Badge with your wording */}
+              <div className="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full mb-8 animate-fade-in border border-blue-100">
+                <Sparkles className="w-4 h-4 text-blue-600 mr-2" />
+                <span className="text-sm font-semibold text-blue-700">Explore Your Academic Journey</span>
+              </div>
+
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-[color:var(--text)] mb-6 text-balance">
+                Welcome to the <br />
+                <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                  Computing Department
+                </span>
               </h1>
+              
               <p className="mx-auto mt-6 max-w-2xl text-lg text-[color:var(--muted)] leading-relaxed text-pretty">
-                Explore your academic journey and discover the resources available to help you succeed in your computer
+                Discover the resources available to help you succeed in your computer
                 science education.
               </p>
+
+              {/* Action Buttons */}
+              <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+                <Link href="/roadmap" className="px-8 py-4 bg-[color:var(--primary-color)] text-white rounded-xl font-bold shadow-lg hover:shadow-blue-200 hover:-translate-y-0.5 transition-all flex items-center">
+                  Start Planning
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
+                <Link href="/tree" className="px-8 py-4 bg-white text-gray-700 rounded-xl font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all border border-gray-100">
+                  View Roadmap
+                </Link>
+              </div>
             </div>
 
-            {/* Decorative placeholder for illustration */}
-            <div className="mx-auto mt-12 max-w-4xl">
+            {/* Quick Stats Row */}
+            <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8">
+              <div className="text-center p-6 bg-white/40 backdrop-blur-md rounded-2xl border border-white/50">
+                <Users className="w-8 h-8 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-3xl font-bold text-[color:var(--text)]">500+</h3>
+                <p className="text-[color:var(--muted)]">Active Students</p>
+              </div>
+              <div className="text-center p-6 bg-white/40 backdrop-blur-md rounded-2xl border border-white/50">
+                <GraduationCap className="w-8 h-8 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-3xl font-bold text-[color:var(--text)]">24+</h3>
+                <p className="text-[color:var(--muted)]">Level 1 Credits Needed</p>
+              </div>
+              <div className="text-center p-6 bg-white/40 backdrop-blur-md rounded-2xl border border-white/50">
+                <Award className="w-8 h-8 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-3xl font-bold text-[color:var(--text)]">95%</h3>
+                <p className="text-[color:var(--muted)]">Success Rate</p>
+              </div>
+            </div>
+
+            {/* Slider container is now OUTSIDE the stats grid div */}
+            <div className="mx-auto mt-16 max-w-5xl">
               <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-[color:var(--border-color)] bg-[color:var(--card)] shadow-2xl">
                 <HomeHeroSlider />
               </div>
@@ -33,24 +79,28 @@ export default function HomePage() {
         </section>
 
         {/* Feature Cards Section */}
-        <section className="py-16 sm:py-20">
+        <section className="py-16 sm:py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center mb-12">
+            <h2 className="text-4xl font-bold text-[color:var(--text)]">Everything You Need to <span className="text-blue-600">Succeed</span></h2>
+            <p className="mt-4 text-[color:var(--muted)]">Access powerful tools designed to help you plan, track, and achieve your academic goals.</p>
+          </div>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-8 md:grid-cols-2">
+            <div className="grid gap-8 md:grid-cols-3">
               <FeatureCard
                 title="Degree Planner"
-                description="Plan your academic journey with our interactive course roadmap. Drag and drop courses to create your personalized degree plan and track your progress towards graduation."
+                description="Plan your academic journey with our interactive course roadmap. Drag and drop courses to create your personalized degree plan."
                 href="/roadmap"
                 icon={NotebookPen}
               />
               <FeatureCard
                 title="Department Book"
-                description="Browse through our comprehensive department handbook. Learn about our programs, faculty, research opportunities, and everything you need to know about the CS department."
+                description="Browse through our comprehensive department handbook. Learn about our programs, faculty, and research opportunities."
                 href="/dept-book"
                 icon={BookOpen}
               />
               <FeatureCard
                 title="Road Map"
-                description="Browse through our comprehensive department handbook. Learn about our programs, faculty, research opportunities, and everything you need to know about the CS department."
+                description="Visualize your course dependencies and prerequisites in a clear, easy-to-navigate interface."
                 href="/tree"
                 icon={Map}
               />
