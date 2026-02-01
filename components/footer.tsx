@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail } from "lucide-react"
+import { Facebook, Instagram, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
 
 const usefulLinks = [
@@ -11,9 +11,9 @@ const usefulLinks = [
 ]
 
 const socialLinks = [
-  { name: "Facebook", icon: Facebook, href: "#" },
-  { name: "Instagram", icon: Instagram, href: "#" },
-  { name: "Email", icon: Mail, href: "mailto:info@cs.edu" },
+  { name: "Linkedin", icon: Linkedin, href: "https://www.linkedin.com/school/university-of-the-west-indies/posts/?feedView=all" },
+  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/computing_fstgc/" },
+  { name: "Email", icon: Mail, href: "mailto:uwi.fstguildcomputing@gmail.com" },
 ]
 
 export function Footer() {

@@ -33,7 +33,7 @@ export function Navbar() {
                 height={48}
                 className="rounded-full border-2 border-[color:var(--primary-color)] object-cover bg-white"
             />  
-            <span className="text-xl font-bold text-[color:var(--primary-color)]">CompDept</span>
+            <span className="text-xl font-bold text-[color:var(--primary-color)]">Computing Department</span>
             
           </Link>
 

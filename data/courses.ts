@@ -13,7 +13,7 @@ export const courses: Course[] = [
     year: "y1",
     offered: ["s1", "s2"],
     degrees: ["bscs", "bscy", "bita", "bsse"],
-    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
+    description: "This course is intended to lay the foundations for developing good problem solving skills within students of Computing. It is not aimed at teaching any particular programming language or paradigm per se. The ideas covered in this course will be revisited in more detail in a variety of courses in the subsequent part of the Information Technology/Computer Science major.",
   },
   {
     id: "COMP1127",
@@ -23,7 +23,7 @@ export const courses: Course[] = [
     year: "y1",
     offered: ["s1", "s2"],
     degrees: ["bscs", "bscy", "bita", "bsse"],
-    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
+    description: "The primary goal of the course is to introduce students to the big ideas in Computer Science, and how they are used to control the complexity of developing large computational systems. In this course, recognising patterns of problem solving is more important than the efficiency of the solutions themselves.",
   },
   {
     id: "COMP1161",
@@ -64,7 +64,7 @@ export const courses: Course[] = [
     year: "y1",
     offered: ["s2"],
     degrees: ["bscs", "bscy", "bita", "bsse"],
-    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
+    description: "Software engineering essentials includes the topics that support software product design and construction across all sub-disciplines. It also includes information about engineering, the transformation of a design into an implementation, as well as the techniques and tools used during this process.",
   },
 
   // =======================
@@ -90,7 +90,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161"],
     degrees: ["bscs", "bscy", "bita", "bsse"],
-    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
+    description: "The primary goal of the course will be to introduce students to the intricacies in planning and developing large information systems and emphasizing the need for different methods. The students will be introduced to certain techniques and tools to facilitate large information systems development.",
   },
   {
     id: "COMP2171",
@@ -101,7 +101,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2140"],
     degrees: ["bscs", "bsse"],
-    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
+    description: "Covers the fundamentals of Object Orientation including Abstraction, Encapsulation, Information hiding, Coupling, Cohesion, and the Law of Demeter. Topics include identifying classes using Domain Analysis and CRC Cards, defining class relationships, and modelling using UML Diagrams (Use Case, Sequence, Class, etc.).",
   },
   {
     id: "COMP2190",
@@ -112,7 +112,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161", "COMP1210"],
     degrees: ["bscs", "bscy", "bita", "bsse"],
-    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
+    description: "The underlying principle of Net-Centric Computing is a distributed environment where applications and data are downloaded from servers and exchanged with peers across a network on as as-needed basis. The course examines the protocols that underpin the interaction among the heterogeneous platforms and the services provided.",
   },
   {
     id: "COMP2201",
@@ -167,7 +167,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161"],
     degrees: ["bita"],
-    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
+    description: "This course introduces probability and statistics to students of Information Technology as well as the application of these concepts to the computing discipline. It examines the basic concepts of probability theory including counting and measuring and conditional probability and independence of events.",
   },
   {
     id: "INFO2111",
@@ -178,7 +178,7 @@ export const courses: Course[] = [
     offered: ["s1"],
     prereqs: ["COMP1126", "COMP1127", "COMP1161"],
     degrees: ["bita"],
-    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
+    description: "This course covers several data structures and seeks to equip the student with these as tools for managing data in their programs. From simple and structured data types the course progresses through some commonly used built-in data structures to special-purpose user-defined structures.",
   },
   {
     id: "INFO2180",
@@ -189,7 +189,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2140"],
     degrees: ["bita", "bscy"],
-    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
+    description: "Covers the foundations of the technologies that enable the creation of interactive websites that process and modify server-based data. This includes fundamental networking technologies, data representation for the web, web UI design and site design, client-server architecture and client-side and server-side programming.",
   },
   {
     id: "SWEN2165",
@@ -200,7 +200,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2171"],
     degrees: ["bscy"],
-    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
+    description: "Focuses on interacting with stakeholders, dealing with uncertainty and ambiguity, negotiation, and requirements attributes. Topics include requirements evolution, analyzing requirements (safety, security, usability), and requirements documentation using contemporary standards.",
   },
 
   // =======================
@@ -537,7 +537,7 @@ export const courses: Course[] = [
     offered: ["s2"],
     prereqs: ["COMP2140", "COMP2171"],
     degrees: ["bsse"],
-    description: "An introduction to the fundamental concepts of computing, including problem-solving techniques, algorithms, and programming basics.",
+    description: "Topics include Managing the Testing Process, Testing Principles and Techniques (Unit Integration, Systems, Acceptance) and Testing Types (State Based, Regression, Configuration, Compatibility, Alpha, Beta, and Acceptance).",
   },
   {
     id: "SWEN3185",
