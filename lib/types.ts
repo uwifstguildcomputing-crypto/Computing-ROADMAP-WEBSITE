@@ -24,6 +24,7 @@ export type TeamMember = {
   role: string;
   img: string;
   bio: string;
+  imgPosition?: string; // optional field to specify image position (e.g. "top", "center", "bottom")
 };
 
 export type BookPage = {

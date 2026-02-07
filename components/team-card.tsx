@@ -16,7 +16,14 @@ export function TeamCard({ member }: TeamCardProps) {
     <div className="group relative flex flex-col gap-4 rounded-3xl border border-[color:var(--border-color)] bg-[color:var(--card)] p-6 shadow-lg transition-all hover:shadow-xl">
       {/* Profile Image */}
       <div className="relative mx-auto h-40 w-40 overflow-hidden rounded-2xl border-2 border-[color:var(--border-color)]">
-        <Image src={member.img || "/placeholder.svg"} alt={member.name} fill className="object-cover" sizes="160px" />
+        <Image
+          src={member.img || "/placeholder.svg"}
+          alt={member.name}
+          fill
+          className="object-cover"
+          sizes="160px"
+          style={{ objectPosition: member.imgPosition || "center" }}
+        />
       </div>
 
       {/* Name and Role */}
