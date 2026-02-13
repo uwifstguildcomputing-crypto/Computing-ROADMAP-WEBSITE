@@ -146,7 +146,7 @@ export const teamMembers: TeamMember[] = [
     name: "Abigail Pinnock",
     role: "Assistant Publications Chairperson",
     img: "comp-64.jpg",
-    bio: "Something!",
+    bio: "I’m a Computer Science student who enjoys exploring the creative side of technology. I've always been drawn to digital media, design, and communication. Being involved with the Department of Computing allows me to help bring ideas to life by supporting the creation and sharing of content that highlights student experiences, events, and innovation. I’m passionate about using media to connect people and strengthen the department’s online presence.",
     imgPosition: "50% 20%",
 
   },
