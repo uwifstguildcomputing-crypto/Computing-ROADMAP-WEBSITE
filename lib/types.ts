@@ -27,8 +27,21 @@ export type TeamMember = {
   imgPosition?: string; // optional field to specify image position (e.g. "top", "center", "bottom")
 };
 
-export type BookPage = {
+// 1. First, define what a Section looks like
+export interface BookSection {
+  subtitle?: string;
+  body?: string;
+  link?: string;
+}
+
+// 2. Then, define the Page
+export interface BookPage {
   title?: string;
+  subtitle?: string;
   body?: string;
   image?: string;
-};
+  tableData?: string[][]; 
+  link?: string;
+  linkText?: string;
+  sections?: BookSection[]; 
+}

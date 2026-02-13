@@ -7,6 +7,7 @@ import { CourseMarker } from "@/components/course-tree"
 import { BookOpen, Map, GraduationCap, BriefcaseBusiness, Gem, Presentation } from "lucide-react"
 import { useState } from 'react';
 import { courses } from "@/data/courses";
+import Link from "next/link"
 
 
 const degreeOptions = [
@@ -218,10 +219,20 @@ export default function RoadmapPage() {
       
       {/* Matriculation Alert */}
       <div className="mt-16 bg-[color:var(--primary-color)]/5 border-l-4 border-[color:var(--primary-color)] p-6 max-w-4xl mx-auto rounded-r-xl">
+      {selectedYear === 1 ? (
         <p className="text-sm font-medium text-[color:var(--text)]">
-          <strong>Note:</strong> You need a total of <strong>24 level-one credits</strong> to matriculate into your second year. Foundation courses (like FOUN1014) are mandatory but do not count toward this 24-credit requirement.
+          <strong>Note:</strong> You need a total of <strong>24 level-one credits</strong> to matriculate into your second year. 
+          Foundation courses (like FOUN1014) are mandatory but do not count toward this 24-credit requirement.
         </p>
-      </div>
+      ) : (
+        <p className="text-sm font-medium text-[color:var(--text)]">
+          <strong>Note:</strong> For graduation requirements and credit loading rules beyond Year 1, please refer to the official 
+          <Link href="/dept-book" className="text-[color:var(--primary-color)] hover:underline ml-1">
+            Department Handbook
+          </Link>.
+        </p>
+      )}
+    </div>
 
     </main>
     <Footer />

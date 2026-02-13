@@ -2,12 +2,11 @@ import { Facebook, Instagram, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
 
 const usefulLinks = [
-  { name: "Academic Calendar", href: "#" },
-  { name: "Course Catalog", href: "#" },
-  { name: "Student Resources", href: "#" },
-  { name: "Faculty Directory", href: "#" },
-  { name: "Research Labs", href: "#" },
-  { name: "Career Services", href: "#" },
+  { name: "Academic Calendar", href: "https://www.mona.uwi.edu/compsci/#" },
+  { name: "Course Catalog", href: "https://www.mona.uwi.edu/compsci/#" },
+  { name: "Student Resources", href: "https://www.mona.uwi.edu/compsci/#" },
+  { name: "Faculty Directory", href: "https://www.mona.uwi.edu/fst/" },
+  { name: "Career Services", href: "https://www.mona.uwi.edu/placement/" },
 ]
 
 const socialLinks = [

@@ -212,6 +212,7 @@ const handleDragEnd = (event: DragEndEvent) => {
                       semester="s1"
                       courseIds={roadmap[activeYear].s1}
                       totalCredits={getSemesterCredits(activeYear, "s1")}
+                      maxCredits={15}
                       onRemove={(courseId) => handleRemove(activeYear, "s1", courseId)}
                     />
                     <SemesterColumn
@@ -220,6 +221,7 @@ const handleDragEnd = (event: DragEndEvent) => {
                       semester="s2"
                       courseIds={roadmap[activeYear].s2}
                       totalCredits={getSemesterCredits(activeYear, "s2")}
+                      maxCredits={18}
                       onRemove={(courseId) => handleRemove(activeYear, "s2", courseId)}
                     />
                     <SemesterColumn

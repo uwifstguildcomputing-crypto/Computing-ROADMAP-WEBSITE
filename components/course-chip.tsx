@@ -4,6 +4,7 @@ import { useDraggable } from "@dnd-kit/core"
 import { CSS } from "@dnd-kit/utilities"
 import { GripVertical, X } from "lucide-react"
 import type { Course } from "@/lib/types"
+import { useEffect, useState } from "react"
 
 interface CourseChipProps {
   course: Course
@@ -21,6 +22,13 @@ export function CourseChip({ course, onRemove, isDragging }: CourseChipProps) {
     transform: CSS.Translate.toString(transform),
     opacity: isDragging ? 0.5 : 1,
   }
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
+
 
   return (
     <div

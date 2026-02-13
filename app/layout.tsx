@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { RoadmapProvider } from "@/context/roadmap-context"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
+import { Toaster } from "@/components/ui/toaster"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -46,8 +47,10 @@ export default function RootLayout({
         <ThemeProvider>
           <RoadmapProvider>{children}</RoadmapProvider>
           <Analytics />
+          <Toaster /> {/* This is the engine that actually renders the message */}
         </ThemeProvider>
       </body>
     </html>
   )
 }
+
